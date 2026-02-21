@@ -146,7 +146,6 @@ If `commons.py` still contains placeholder InfluxDB values, `write_to_database(.
 - Stream subscriptions are automatically recreated when timeout tasks complete.
 - Scripts are designed for long runs (`DURATION = 600 * 60 * 60` seconds).
 - `Ctrl+C` triggers cleanup/shutdown logic with pump stop attempts.
-- Slack notification calls were removed from the current controller code.
 
 ## Publication Checklist
 Before public release:
