@@ -24,15 +24,15 @@ Weight is sampled every 10-20 seconds (depending on stream), and regression is p
 - `context.txt`: contextual description for manuscript/repository metadata
 
 ## Requirements
+
+**Important: The Unitelabs SDK is not publicly available. Contact [UniteLabs](https://unitelabs.io) to obtain access and installation instructions.**
+
 The following versions are required:
 - Python `3.11.3`
 - Unitelabs SDK `0.3.0`
 - pandas `2.0.3`
 - scikit-learn `1.3.2`
 - statsmodels `0.14.0`
-
-Important:
-- The Unitelabs SDK is not publicly available. Contact UniteLabs to obtain access and installation instructions.
 
 Additional runtime dependencies used by the scripts/shared module:
 - `influxdb-client[async]`
