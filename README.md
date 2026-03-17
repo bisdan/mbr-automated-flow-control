@@ -29,7 +29,8 @@ Weight is sampled every 10-20 seconds (depending on stream), and regression is p
 
 The following versions are required:
 - Python `3.11.3`
-- Unitelabs SDK `0.3.0`
+- unitelabs-lib `0.1.27`
+- unitelabs-sdk `0.2.9`
 - pandas `2.0.3`
 - scikit-learn `1.3.2`
 - statsmodels `0.14.0`
@@ -40,7 +41,7 @@ Additional runtime dependencies used by the scripts/shared module:
 ## Installation
 Create and activate a virtual environment, then install dependencies.
 
-Install the Unitelabs SDK (`0.3.0`) using the private distribution method provided by UniteLabs.
+Install the Unitelabs SDK (`0.2.9`) using the private distribution method provided by UniteLabs.
 
 Then install the remaining dependencies:
 
