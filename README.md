@@ -20,8 +20,6 @@ Weight is sampled every 10-20 seconds (depending on stream), and regression is p
 - `filtrate_control.py`: filtrate stream controller
 - `bleed_control.py`: bleed stream controller
 - `commons.py`: shared logger, scheduler, and InfluxDB write helper
-- `feed_control.ipynb`, `filtrate_control.ipynb`, `bleed_control.ipynb`: source notebooks
-- `context.txt`: contextual description for manuscript/repository metadata
 
 ## Requirements
 
@@ -68,7 +66,7 @@ Current hardcoded service names and channels:
 | Filtrate | `filtrate_control.py` | `Reglo ICC 4x ALE 1` | `pump_actuator_controller_3` | `KERN DS-20k0.1 Bleed`* |
 | Bleed | `bleed_control.py` | `Reglo ICC 4x ALE 2` | `pump_actuator_controller_1` | `MT_Viper_SW` |
 
-\* `filtrate_control.py` currently uses the Bleed scale name intentionally (see inline TODO in code).
+\* `filtrate_control.py` intentionally preserves the historical balance service name used during the experiment; the service name does not indicate the stream controlled by this script.
 
 ## Control Logic Summary
 Each script follows the same high-level sequence:
@@ -147,10 +145,6 @@ If `commons.py` still contains placeholder InfluxDB values, `write_to_database(.
 - Stream subscriptions are automatically recreated when timeout tasks complete.
 - Scripts are designed for long runs (`DURATION = 600 * 60 * 60` seconds).
 - `Ctrl+C` triggers cleanup/shutdown logic with pump stop attempts.
-
-## Publication Checklist
-Before public release:
-1. Confirm balance mapping for filtrate reflects final hardware setup. (the filtrate script is currently reading weight from a service named Bleed.)
 
 ## Citation
 **Placeholder:** Final citation (authors, title, journal, year, DOI) will be added here once available.

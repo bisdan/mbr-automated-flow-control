@@ -143,7 +143,7 @@ async def run():
 
     balance = await connect(
         name="KERN DS-20k0.1 Bleed"
-    )  # TODO: THIS SHOULD BE "KERN DS-20k0.1 Filtrate" but has been replaced due to crashing of the scale
+    )  # THIS SHOULD BE "KERN DS-20k0.1 Filtrate" but has been replaced due to crashing of the scale
 
     try:
         pump_subscription = asyncio.create_task(subscribe_flow_rate_with_timeout(pump))
